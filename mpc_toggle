@@ -11,7 +11,7 @@ state=$(mpc | grep playing| wc -l)
 # 1 is playing
 
 if [[ $state = 1 ]]; then
-  mpc pause >> /dev/null
+	mpc pause >> /dev/null
 else
 	mpc play >> /dev/null
 fi
