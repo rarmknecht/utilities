@@ -1,0 +1,5 @@
+# Enable Audio Control from Keyboard
+bindsym XF86AudioNext exec mpc next
+bindsym XF86AudioPrev exec mpc prev
+bindsym XF86AudioPlay exec mpc_toggle
+bindsym XF86AudioMute exec my_mute
