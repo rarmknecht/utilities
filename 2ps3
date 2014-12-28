@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ ! $# == 2]; then
+	echo "Usage: $0 <input_file> <output_file>"
+fi
+
+echo "Coverting $1 into $2 for PS3 Playback..."
+ffmpeg -i "$1" -q:v 0 -s hd720 -vcodec libx264 -ab 128k -acodec ac3 -r 23.98 "$2"
+echo "Conversion complete. Output saved as: $2"
+
